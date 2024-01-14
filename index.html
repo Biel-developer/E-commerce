@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="#">Virtu Gaming</a></div>
+        <div class="hamburguer"><i class="bi bi-list"></i></div>
+        <div class="menu" id="menuHamburguer">
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="produtos"><a href="#">Produtos</a></li>
+                <li class="categoria"><a href="#">Categoria</a></li>
+            </ul>
+        </div>
+        <div class="carrinho" id="cartBuy"><i class="bi bi-cart3"></i></div>
+        <div class="qtdCarrinho" id="qtdCart">0</div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="text-container">
+                <h2>Conectando <span>desejos</span> e facilidade em cada clique.</h2>
+            </div>
+            <div class="background-container">
+                <img src="./img/Banner-img.png" alt="">
+            </div>
+        </div>
+
+        <div class="banner-apresentation">
+            <div class="text-apresentation">
+                <p>20%</p>
+                <h1>SONY</h1>
+                <h3>11 / 01 / january</h3>
+            </div>
+            <div class="image-apresentation">
+                <img src="./img/Fone-gamer-sony-img.png" alt="">
+            </div>
+            <div class="text-fone-gamer">
+                <h2>over-ear</h2>
+                <h3>Assistente de voz integrado: Google Assistant.</h3>
+                <input type="submit" id="Shop-cart" value="Shop">
+            </div>
+        </div>
+
+            <div class="produtos-mercadoria">
+                <div class="text-mercadoria"><h1>Products</h1></div>
+                <div class="products" id="products">
+
+
+                    <div class="card">
+                        <img src="./img/produto-ps5-img.png" alt="">
+                        <div class="text-card">
+                            <span>Sony Playstation 5</span>
+                            <p>R$4.209<s>R$4.265</s></p>
+                            <input type="submit" key="0" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+
+
+                    <div class="card" id="JBL">
+                        <img src="./img/produto-jbl-img.png" alt="">
+                        <div class="text-card">
+                            <span>JBL PartyBox 310</span>
+                            <p>R$3.270<s>R$3.290</s></p>
+                            <input type="submit" key="1" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="./img/produto-iphone-img.png">
+                        <div class="text-card">
+                            <span>Apple iPhone 15 (256 GB)</span>
+                            <p>R$6.582<s>R$6.680</s></p>
+                            <input type="submit" key="2" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+
+                    <div class="card" id="notebook">
+                        <img src="./img/produto-notebook-img.png">
+                        <div class="text-card">
+                            <span>Notebook Samsung Galaxy</span>
+                            <p>R$1.398<s>R$1.450</s></p>
+                            <input type="submit" key="3" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/produto-smartv-img.png">
+                        <div class="text-card">
+                            <span>Smart Tv 32Polegadas</span>
+                            <p>R$1.099<s>R$1.299</s></p>
+                            <input type="submit" key="4" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+
+
+                    <div class="card" id="microfone">
+                        <img src="./img/produto-microfone-img.png">
+                        <div class="text-card">
+                            <span>FIFINE Microfone Dinâmico</span>
+                            <p>R$340,99<s>R$369,00</s></p>
+                            <input type="submit" key="5" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+
+                    <div class="card" id="fone">
+                        <img src="./img/produto-fone-sony-img.png">
+                        <div class="text-card">
+                            <span>Fone Gamer over-ear Sony</span>
+                            <p>R$519,00<s>R$530,00</s></p>
+                            <input type="submit" key="6" value="Adicionar ao Carrinho" id="addCart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="fundo" id="fundoList">
+        <div class="listaCompra" id="ListCompra">
+            <div class="carrinho-text">
+                <h1>Carrinho <i class="bi bi-cart3"></i></h1>
+            </div>
+            <div class="remove-card" id="RemoveList"><i class="bi bi-x-lg"></i></div>
+            <hr>
+            <div class="identificao">
+                <p>Item</p>
+                <p class="preco">Preço</p>
+            </div>
+            <div class="card-carrinho" id="carrinhoID">
+                <img src="./img/produto-ps5-img.png" alt="">
+                <div class="text-card-carrinho" id="textProduto">
+                    <span>Sony Playstation 5</span>
+                    <p>R$4.209</p>
+                    <input type="submit" value="Remover" id="removerItem">
+                </div>
+            </div>
+            <div class="card-carrinho" id="carrinhoID">
+                <img src="./img/produto-ps5-img.png" alt="">
+                <div class="text-card-carrinho" id="textProduto">
+                    <span>Sony Playstation 5</span>
+                    <p>R$4.209</p>
+                    <input type="submit" value="Remover" id="removerItem">
+                </div>
+            </div>
+            <div class="confirmar-pedido">
+                <input type="submit" id="confirmList" value="Confirmar Pedido">
+                <p class="valorTotal">Total: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./java-script.js"></script>
+
+    
+
+    
+</body>
+</html>
